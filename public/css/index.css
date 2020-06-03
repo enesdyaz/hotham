@@ -1,0 +1,260 @@
+.div-blue-100 {
+  background-color: #e3f2fd;
+}
+
+.div-blue-200 {
+  background-color: #bbdefb;
+}
+
+.div-blue-300 {
+  background-color: #64b5f6;
+}
+
+.div-blue-400 {
+  background-color: #64b5f6;
+}
+
+.div-blue-500 {
+  background-color: #64b5f6;
+}
+
+.div-blue-600 {
+  background-color: #2196f3;
+}
+
+.div-card-100 {
+  background-color: #375f73;
+}
+
+.span-box-white {
+  border: 1px solid whitesmoke;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0 4px;
+}
+
+.span-box-white:hover {
+  background-color: #0A969B;
+}
+
+.card-box {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.card-box .image {
+  background: url("../image/6249.jpg") no-repeat;
+  background-size: cover;
+  border: 1px solid white;
+  width: 30%;
+  height: 100px;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-box .content {
+  border: 1px solid white;
+  width: 70%;
+  height: 100px;
+  float: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+  padding: 6px 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card-box .content:hover {
+  background: #0A969B;
+}
+
+.card-box .content .category {
+  font-size: 0.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.card-box .content .title {
+  margin-top: -2px;
+  font-size: 0.9rem;
+}
+
+.card-box .content .subtitle {
+  font-size: 0.6rem;
+  margin-top: -4px;
+}
+
+.card-box .content .address {
+  margin-top: 4px;
+  font-size: 0.6rem;
+}
+
+.card-box .content .phone {
+  font-size: 0.6rem;
+}
+
+.div-box-blue {
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  padding-top: 14px;
+  font-weight: bold;
+  border-radius: 7px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.div-box-blue:hover {
+  background-color: #64b5f6;
+}
+
+.btn-ani-arrow {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #2196f3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-ani-arrow span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-ani-arrow span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-ani-arrow:hover span {
+  padding-right: 25px;
+}
+
+.btn-ani-arrow:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.image-full {
+  height: 100vh;
+  background-color: #375f73;
+  color: white;
+  position: relative;
+  overflow: auto;
+}
+
+.image-full .image-full-item {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  display: inline-block;
+  border-color: whitesmoke;
+  border: 2px solid whitesmoke;
+  padding: 10px;
+}
+
+.image-full-title {
+  color: white;
+  text-align: center;
+}
+
+.image-full-title .image-full-item {
+  display: inline-block;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 10px;
+}
+
+.pagination li a {
+  font-size: 100px;
+}
+
+.menu-center {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 14px;
+  margin-top: 15px;
+}
+
+.menu-center a {
+  text-decoration: none;
+  padding: 4px 10px;
+  color: #375f73;
+  border: 1px solid #375f73;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 0.6rem;
+}
+
+.menu-center a:hover {
+  background: #0A969B;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-center a:active {
+  background: #79C5C8;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-bottom {
+  z-index: 1;
+  background-color: #0A969B;
+  text-align: center;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu-bottom .wrap {
+  margin: 20px;
+}
+
+.menu-bottom .wrap button {
+  font-size: 0.8rem;
+  border: 2px solid white;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu-bottom .wrap button:hover {
+  background-color: #79C5C8;
+}
+
+.input-file-button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=index.css.map */

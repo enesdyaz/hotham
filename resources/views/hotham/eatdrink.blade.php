@@ -7,25 +7,33 @@
     <div class='image-full-item'>EAT&DRINK</div><br><br>
     <h6><i class="far fa-caret-square-down"></i> Category</h6>
     <p>
-        @foreach($category as $cat)
+        @if (is_null($category))
         <span class='span-box-white'>
-            {{$cat->name}}
+            <p>There is no Data</p>
         </span>
-        @endforeach
+        @else
+
+            @foreach($category as $cat)
+            <span class='span-box-white'>
+                {{$cat->name}}
+            </span>
+            @endforeach
+        @endif
+
     </p>
     <br>
-   
+
 
     <p>
         <i class="fas fa-utensils"></i> Eat&Drink
-  
+
     
     </p>
 
 <!-- card_box -->
 @foreach($eatdrink as $eat)
     <div class='card-box'>
-    <div class='image' style="background: url('{{asset('/storage/image/eatdrink/' .$eat->image)}}')">image</div>
+    <div class='image'><img src="{{asset('/storage/image/eatdrink/' .$eat->image)}}"></div>
         <div class='content'>
             <div class='category'>{{$eat->category_id}}</div>
             <div class='title'>{{$eat->name}}</div>
@@ -70,7 +78,7 @@
                         <input id='create_title' name='name' type="text">
             
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success">Save changes</button>
+                        <button type="submit" class="btn btn-success">Save</button>
                     </form>
                 </div>
         </div>

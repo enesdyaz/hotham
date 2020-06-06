@@ -47,14 +47,16 @@ $second-100: #79C5C8;
     overflow: hidden;
     padding: 5px;
     .image{
-        background: url('../image/6249.jpg') no-repeat;
-        background-size: cover;
         border: 1px solid white;
-        width: 30%;
-        height: 100px;
+        height: 100px; width: 28%;
         float: left;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        img{
+            height:99.5%; width: 100%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
 
     }
     .content{

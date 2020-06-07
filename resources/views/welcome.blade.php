@@ -8,6 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ec001ec395.js" crossorigin="anonymous"></script>
+
 
         <!-- Styles -->
         <style>
@@ -39,32 +41,45 @@
                 right: 10px;
                 top: 18px;
             }
+            .top-left{
+                position: absolute;
+                left: 10px;
+                top: 18px
+            }
 
             .content {
                 text-align: center;
             }
 
             .title {
-                font-size: 84px;
+                margin-bottom: 100px;
+                font-size: 20px;
             }
 
             .links > a {
+                
                 color: #636b6f;
-                padding: 0 25px;
+                padding: 0 10px;
                 font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+   
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+              
+                color: white;
             }
+       
         </style>
     </head>
+
+
     <body>
         <div class="flex-center position-ref full-height">
+            <div class="top-left"><i class='fa fa-mountain'></i><small> Hotham Valley Project</small></div>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -78,22 +93,15 @@
                     @endauth
                 </div>
             @endif
-
+            
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                
+                <div class="links" style='position: fixed; bottom:0; left: 0; overflow: hidden; z-index: 0;'>
+                    <video autoplay muted loop id="myVideo">
+                    <source src="{{asset('image/welcome.mp4')}}" type="video/mp4">
+                    </video>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+             
             </div>
         </div>
     </body>

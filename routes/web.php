@@ -30,5 +30,10 @@ Route::get('/hotham/event', 'HothamController@event');
 
 Route::post('/hotham/add_category_eatdrink', 'HothamController@store');
 Route::post('/hotham/add_eatdrink', 'HothamController@storeEatDrink');
+Route::get('/hotham/add_eatdrink/{eatdrink}', 'HothamController@showEatDrink');
+Route::delete('/hotham/add_eatdrink/{eatdrink}', 'HothamController@destroyEatDrink');
+Route::get('/hotham/add_eatdrink/{eatdrink}/edit', 'HothamController@editEatDrink');
+Route::put('/hotham/add_eatdrink/{eatdrink}', 'HothamController@updateEatDrink');  //update
+
 
 

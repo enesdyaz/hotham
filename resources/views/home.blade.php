@@ -8,7 +8,7 @@
 
 <div class='menu-bottom'>
     <div class='wrap'>
-        <button  type="button" data-toggle="modal" data-target="#exampleModalCenter">ADD MENU</button>
+       <a href="/hotham/eatdrink"><button  type="button" data-toggle="modal" data-target="#">START</button></a> 
     </div>
 </div>
 

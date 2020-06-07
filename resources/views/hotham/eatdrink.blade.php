@@ -32,6 +32,7 @@
 
 <!-- card_box -->
 @foreach($eatdrink as $eat)
+<a href="/hotham/add_eatdrink/{{$eat->id}}">
     <div class='card-box'>
     <div class='image'><img src="{{asset('/storage/image/eatdrink/' .$eat->image)}}"></div>
         <div class='content'>
@@ -42,6 +43,7 @@
             <div class='phone'><i class='fa fa-mobile-alt'></i> {{$eat->phone}}</div>
         </div>
     </div>
+</a>
 @endforeach
 
 <div style='height:140px;'></div>
@@ -118,7 +120,7 @@
                     <input class='input-file-button' type="file" name='image'>
         
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-success">Save changes</button>
+                    <button type="submit" class="btn btn-success">Save</button>
                 </form>
             </div>
     </div>

@@ -26,6 +26,10 @@
   background-color: #375f73;
 }
 
+a {
+  color: white;
+}
+
 .span-box-white {
   border: 1px solid whitesmoke;
   padding: 4px 10px;
@@ -101,6 +105,37 @@
 
 .card-box .content .phone {
   font-size: 0.6rem;
+}
+
+.card-box-show {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.card-box-show .image {
+  width: 100%;
+  height: 100%;
+}
+
+.card-box-show .image img {
+  height: 99.5%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-box-show .content {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 25px;
+  padding-left: 10px;
+  text-align: left;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.card-box-show .content .title {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .div-box-blue {
@@ -250,7 +285,7 @@
   color: white;
   padding: 8px;
   border-radius: 8px;
-  margin: 8px;
+  margin: 3px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\category_eatdrink;
-use App\Eatdrink;
+use App\eatdrink;
 
 
 class HothamController extends Controller
@@ -72,5 +72,41 @@ class HothamController extends Controller
 
     }
 
+    public function showEatDrink(Eatdrink $eatdrink){
+        return view('hotham.show', [
+            'eatdrink' => $eatdrink
+        ]);
+    }
+
+    public function destroyEatDrink(Eatdrink $eatdrink){
+        $eatdrink->delete();
+
+        return redirect('/hotham/eatdrink');
+    }
+
+    public function editEatDrink(Eatdrink $eatdrink){
+        return view('hotham.edit', [
+            'eatdrink' => $eatdrink
+        ]);
+    }
+
+    public function updateEatDrink(Eatdrink $eatdrink){
+        request()->validate([
+            'category_id' => 'required',
+            'name' => 'required',
+            'subtitle' => 'required',
+            'address' => 'required',
+            'phone' => 'required',
+        ]);  // validate 보안
+  
+        $eatdrink->update(request(['category_id', 'name', 'subtitle', 'address', 'phone']));
+        
+        // $task->update([
+        //     'title'=>request('title'),
+        //     'body'=>request('body')
+        // ]);
+
+        return redirect('/hotham/add_eatdrink/'.$eatdrink->id);
+    }
 
 }

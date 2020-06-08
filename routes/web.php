@@ -37,3 +37,10 @@ Route::put('/hotham/add_eatdrink/{eatdrink}', 'HothamController@updateEatDrink')
 
 
 
+//photo
+Route::post('/hotham/add_eatdrink/photo', 'PhotoController@store');
+Route::delete('/hotham/add_eatdrink/photo/{photo}', 'PhotoController@deletePhoto');
+
+
+
+

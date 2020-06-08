@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\category_eatdrink;
 use App\eatdrink;
+use App\photo;
 
 
 class HothamController extends Controller
@@ -49,14 +50,15 @@ class HothamController extends Controller
             'image' => 'required'
         ]);
 
+        // Store에 저장
         $filenameWithExtension = $request->file('image')->getClientOriginalName();  // name.jpg
         $filename = pathinfo($filenameWithExtension, PATHINFO_FILENAME);  // name
         $extension = $request->file('image')->getClientOriginalExtension();   // .jpg
         $filenametoStore = $filename . '_' . time() . '.' . $extension;  // name_012020.jpg
-
-
         $path = $request->file('image')->storeAs('public/image/eatdrink', $filenametoStore);
 
+
+        // Database에 저장
         $album = new EatDrink;  // model Album
         $album->name = $request->input('name');
         $album->category_id = $request->input('category_id');
@@ -73,8 +75,10 @@ class HothamController extends Controller
     }
 
     public function showEatDrink(Eatdrink $eatdrink){
+        $photos = Photo::all();
         return view('hotham.show', [
-            'eatdrink' => $eatdrink
+            'eatdrink' => $eatdrink,
+            'photos' => $photos
         ]);
     }
 

@@ -198,7 +198,7 @@ a{
     background-color: $primary;
     color: white;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
     
     .image-full-item{
         position: absolute;    
@@ -208,6 +208,15 @@ a{
         border-color: whitesmoke;
         border: 2px solid whitesmoke;
         padding: 10px;
+    }
+    .image-full-item-bottom{
+        position: absolute;    
+        bottom: 20%;
+        left: 35%;
+        display: inline-block;
+        border-color: whitesmoke;
+        border: 1px solid whitesmoke;
+        padding: 10px 20px; 
     }
 
 }

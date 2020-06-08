@@ -4,6 +4,7 @@
 
 <div class='image-full grid-container'>
     <div class='image-full-item'>HOTHAM VALLEY PROJECT<br><span>ADMIN</span></div>
+    <div class="image-full-item-bottom">Harry Jung</div>
 </div>
 
 <div class='menu-bottom'>

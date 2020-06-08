@@ -204,7 +204,7 @@ a {
   background-color: #375f73;
   color: white;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .image-full .image-full-item {
@@ -215,6 +215,16 @@ a {
   border-color: whitesmoke;
   border: 2px solid whitesmoke;
   padding: 10px;
+}
+
+.image-full .image-full-item-bottom {
+  position: absolute;
+  bottom: 20%;
+  left: 35%;
+  display: inline-block;
+  border-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  padding: 10px 20px;
 }
 
 .image-full-title {

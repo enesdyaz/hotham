@@ -36,7 +36,8 @@ header .menu ul li {
 
 header .menu ul li a {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  padding: 4px;
 }
 
 .jumbotron {
@@ -132,7 +133,42 @@ footer {
   line-height: 10vh;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 5vh;
+    background: #bbbbbb;
+    overflow: hidden;
+  }
+  header .logo {
+    display: inline-block;
+    border: 1px solid white;
+    height: 3vh;
+    font-size: 1rem;
+    color: white;
+    padding: 4px 18px;
+    line-height: 2.4vh;
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+  header .logo a {
+    color: white;
+  }
+  header .menu {
+    float: right;
+    color: white;
+    padding-right: 10px;
+  }
+  header .menu ul li {
+    float: left;
+    list-style: none;
+    line-height: 5vh;
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+  header .menu ul li a {
+    color: white;
+    font-size: 1.2rem;
+  }
   .description {
     background: whitesmoke;
     padding: 10px;

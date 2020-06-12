@@ -36,7 +36,7 @@
            <li><a href='/pages/main'>eat</a></li>
            <li><a href='/pages/main'>see&do</a></li>
            <li><a href='/pages/main'>event</a></li>
-           <li><a href='/pages/main'>trup</a></li>
+           <li><a href='/pages/main'>trip</a></li>
  
         </ul>
     </div>

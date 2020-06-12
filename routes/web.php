@@ -41,6 +41,8 @@ Route::put('/hotham/add_eatdrink/{eatdrink}', 'HothamController@updateEatDrink')
 Route::post('/hotham/add_eatdrink/photo', 'PhotoController@store');
 Route::delete('/hotham/add_eatdrink/photo/{photo}', 'PhotoController@deletePhoto');
 
-
+// pages
+Route::get('/pages/main', 'PageController@main');
+Route::get('/pages/single', 'PageController@single');
 
 

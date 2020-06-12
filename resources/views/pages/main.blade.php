@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ec001ec395.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ asset('css/index1.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
 
 
         <!-- Styles -->
@@ -76,7 +76,6 @@
             a{
                 text-decoration: none;
             }
-
        
         </style>
     </head>
@@ -90,10 +89,10 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        {{-- <a href="{{ route('login') }}">Login</a> --}}
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            {{-- <a href="{{ route('register') }}">Register</a> --}}
                         @endif
                     @endauth
                 </div>
@@ -105,7 +104,7 @@
 
 
     <header>
-    <div class="logo">LOGO</div>
+    <div class="logo"><a href="/">LOGO</a></div>
     <div class="menu">
         <ul>
             <li><a href="/pages/main">stay</a></li>
@@ -118,42 +117,72 @@
 </header>
 
 <!-- Div 2 -->    
-<section class="video">VIDEO</section>
+<section class="video">Main Jumbotron</section>
 
 <!-- Div 3 -->    
-<section class='greeting'>Greeting</section>
+<section class='greeting'>Main Content</section>
 
 <!-- Div 4 -->    
-<section class="googlemap">Google map</section>
+<section class="googlemap"><i class='fa fa-sort-amount-up'></i> Filter</section>
 
 
 
 <!-- div 5 -->
     <div class="item-card">
+        <br>
+        <p style='text-align: center;'> RESULTS OF YOUR INTEREST</p>
+
         <div class='wrap'>
-            <a href='pages/main'>
-                <div class='item-image'>Eat&Drink</div>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
                 <div class='item-content'>content</div>
             </a>
         </div>
-
         <div class='wrap'>
-            <a href='pages/main'>
-                <div class='item-image'>See&Do</div>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
                 <div class='item-content'>content</div>
             </a>
         </div>
-
         <div class='wrap'>
-            <a href='pages/main'>
-                <div class='item-image'>Stay</div>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
                 <div class='item-content'>content</div>
             </a>
         </div>
-
         <div class='wrap'>
-            <a href='pages/main'>
-                <div class='item-image'>Event</div>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
+                <div class='item-content'>content</div>
+            </a>
+        </div>
+        <div class='wrap'>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
+                <div class='item-content'>content</div>
+            </a>
+        </div>
+        <div class='wrap'>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
+                <div class='item-content'>content</div>
+            </a>
+        </div>
+        <div class='wrap'>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
+                <div class='item-content'>content</div>
+            </a>
+        </div>
+        <div class='wrap'>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
+                <div class='item-content'>content</div>
+            </a>
+        </div>
+        <div class='wrap'>
+            <a href="/pages/single">
+                <div class='item-image'>image</div>
                 <div class='item-content'>content</div>
             </a>
         </div>

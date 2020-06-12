@@ -1,0 +1,197 @@
+header {
+  height: 5vh;
+  background: #bbbbbb;
+  overflow: hidden;
+}
+
+header .logo {
+  display: inline-block;
+  border: 1px solid white;
+  height: 2.4vh;
+  line-height: 2.4vh;
+  font-size: 1rem;
+  color: white;
+  padding: 2px 12px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+header .logo a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+header .menu {
+  float: right;
+  color: white;
+  padding-right: 10px;
+}
+
+header .menu ul li {
+  float: left;
+  list-style: none;
+  padding: 0 5px;
+  line-height: 2vh;
+  font-size: 0.9rem;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.video {
+  height: 50vh;
+  background: whitesmoke;
+  text-align: center;
+  line-height: 50vh;
+}
+
+.greeting {
+  height: 20vh;
+  background: #bbbbbb;
+  color: white;
+  text-align: center;
+  line-height: 20vh;
+}
+
+.googlemap {
+  height: 4vh;
+  background: whitesmoke;
+  text-align: center;
+  line-height: 4vh;
+}
+
+.item-card .wrap {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.item-card .wrap .item-image {
+  background: #e5ebe5;
+  width: 100%;
+  margin: 0 auto;
+  height: 20vh;
+  text-align: center;
+  line-height: 20vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item-card .wrap .item-content {
+  background: #dadada;
+  width: 100%;
+  margin: 0 auto;
+  height: 10vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  line-height: 10vh;
+}
+
+footer {
+  background: #d6d0d0;
+  height: 15vh;
+  color: white;
+  text-align: center;
+  line-height: 15vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .item-card .wrap {
+    margin: 5px 0;
+    padding: 10px 100px;
+  }
+  .item-card .item-image {
+    background: #e5ebe5;
+    width: 100%;
+    margin: 0 auto;
+    height: 30vh;
+    text-align: center;
+    line-height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .item-card .item-content {
+    background: #dadada;
+    width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    line-height: 10vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 5vh;
+    background: #bbbbbb;
+  }
+  header .logo {
+    display: inline-block;
+    border: 1px solid white;
+    height: 2vh;
+    font-size: 1rem;
+    color: white;
+    padding: 4px 18px;
+    line-height: 2vh;
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+  .video {
+    height: 95vh;
+    background: whitesmoke;
+    text-align: center;
+    line-height: 95vh;
+  }
+  .greeting {
+    height: 50vh;
+    background: #bbbbbb;
+    color: white;
+    text-align: center;
+    line-height: 50vh;
+  }
+  .googlemap {
+    height: 10vh;
+    background: whitesmoke;
+    text-align: center;
+    line-height: 10vh;
+  }
+  .item-card {
+    overflow: hidden;
+    text-align: center;
+    padding: 100px;
+  }
+  .item-card .wrap {
+    margin: 10px 0;
+    padding: 10px;
+    margin-left: 8x;
+    overflow: hidden;
+    width: 30%;
+    float: left;
+  }
+  .item-card .wrap .item-image {
+    background: #e5ebe5;
+    width: 100%;
+    margin: 0 auto;
+    height: 20vh;
+    text-align: center;
+    line-height: 20vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .item-card .wrap .item-content {
+    background: #dadada;
+    width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    line-height: 10vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

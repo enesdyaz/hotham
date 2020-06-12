@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Photo;
+use App\photo;
 use Storage;
 
 class PhotoController extends Controller

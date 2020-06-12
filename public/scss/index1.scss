@@ -1,0 +1,237 @@
+$background:  rgb(187, 187, 187);
+
+// div 1
+header{
+    height: 5vh;
+    background: $background;
+    overflow: hidden;
+    .logo{
+        display: inline-block;
+        border: 1px solid white;
+        height: 2.4vh;
+        line-height: 2.4vh;
+
+        font-size: 1rem;
+        color: white;
+        padding: 2px 12px;
+        margin-left: 20px;
+        margin-top: 8px;
+    }
+    .menu{
+        float: right;
+        color: white;
+        padding-right: 10px;
+        ul{
+            li{
+                float: left;
+                list-style: none;
+                padding: 0 5px;
+                line-height: 2vh;
+                font-size: 0.9rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}
+
+// div 2
+.video{
+    height: 50vh;
+    background: whitesmoke;
+    text-align: center;
+    line-height: 50vh;
+}
+
+// div 3
+.greeting{
+    height: 20vh;
+    background: $background;
+    color: white;
+
+    text-align: center;
+    line-height: 20vh;
+}
+
+// div 4
+.googlemap{
+    height: 30vh;
+    background: whitesmoke;
+
+    text-align: center;
+    line-height: 30vh;
+}
+
+
+// div 5
+.item-card{
+    .wrap{
+        margin: 15px 0 ;
+        padding: 10px;
+        
+            .item-image{
+                background: rgb(229, 235, 229);
+                width: 100%;
+                margin: 0 auto;
+                height: 20vh;
+                text-align: center;
+                line-height: 20vh;
+    
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+    
+            }
+            .item-content{   
+                background: rgb(218, 218, 218);    
+                width: 100%;
+                margin: 0 auto;
+                height: 10vh;
+
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+    
+                text-align: center;
+                line-height: 10vh;
+
+            }
+    }
+}
+
+// div 6
+footer{
+    background: rgb(214, 208, 208);
+    height: 15vh;
+    color: white;
+
+    text-align: center;
+    line-height: 15vh;
+}
+
+
+@media only screen and(min-width: 768px){
+    .item-card{
+        .wrap{
+            margin: 5px 0 ;
+            padding: 10px 100px;
+            }
+           
+                .item-image{
+                    background: rgb(229, 235, 229);
+                    width: 100%;
+                    margin: 0 auto;
+                    height: 30vh;
+                    text-align: center;
+                    line-height: 30vh;
+        
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+        
+                }
+                .item-content{   
+                    background: rgb(218, 218, 218);    
+                    width: 100%;
+                    margin: 0 auto;
+                    height: 10vh;
+    
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+        
+                    text-align: center;
+                    line-height: 10vh;
+    
+                }
+            
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    header{
+        height: 5vh;
+        background: $background;
+        .logo{
+            display: inline-block;
+            border: 1px solid white;
+            height: 2vh;
+            font-size: 1rem;
+            color: white;
+            padding: 4px 18px;
+            line-height: 2vh;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+    }
+    
+    // div 2
+    .video{
+        height: 95vh;
+        background: whitesmoke;
+        text-align: center;
+        line-height: 95vh;
+    }
+    
+    // div 3
+    .greeting{
+        height: 50vh;
+        background: $background;
+        color: white;
+    
+        text-align: center;
+        line-height: 50vh;
+    }
+    
+    // div 4
+    .googlemap{
+        height: 50vh;
+        background: whitesmoke;
+    
+        text-align: center;
+        line-height: 50vh;
+    }
+    
+
+// div 5
+.item-card{
+    overflow: hidden;
+    text-align: center;
+    padding: 100px;
+    .wrap{
+        margin: 10px 20px;
+        padding: 10px;
+        overflow: hidden;
+        width: 42%;
+        float: left;
+        
+            .item-image{
+                background: rgb(229, 235, 229);
+                width: 100%;
+                margin: 0 auto;
+                height: 30vh;
+                text-align: center;
+                line-height: 30vh;
+    
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+    
+            }
+            .item-content{   
+                background: rgb(218, 218, 218);    
+                width: 100%;
+                margin: 0 auto;
+                height: 10vh;
+
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+    
+                text-align: center;
+                line-height: 10vh;
+
+            }
+        }
+    }
+
+}

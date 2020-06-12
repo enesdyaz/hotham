@@ -1,0 +1,214 @@
+header {
+  height: 5vh;
+  background: #bbbbbb;
+  overflow: hidden;
+}
+
+header .logo {
+  display: inline-block;
+  border: 1px solid white;
+  height: 3vh;
+  font-size: 1rem;
+  color: white;
+  padding: 4px 18px;
+  line-height: 2.4vh;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+header .logo a {
+  color: white;
+}
+
+header .menu {
+  float: right;
+  color: white;
+  padding-right: 10px;
+}
+
+header .menu ul li {
+  float: left;
+  list-style: none;
+  line-height: 5vh;
+  font-size: 0.9rem;
+  padding-top: 10px;
+}
+
+header .menu ul li a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.jumbotron {
+  height: 50vh;
+  line-height: 50vh;
+  background: whitesmoke;
+  text-align: center;
+}
+
+.filter {
+  color: black;
+  font-size: 0.8rem;
+  padding-left: 5px;
+}
+
+.filter .filter_wrap {
+  text-align: center;
+  padding: 5px;
+  margin: 15px 0;
+}
+
+.filter .filter_wrap .filter_item {
+  border: 1px solid #dad5d5;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  margin: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.filter .filter_wrap .filter_item:hover {
+  cursor: pointer;
+  background: #d1cccc;
+}
+
+.description {
+  background: whitesmoke;
+  padding: 10px;
+}
+
+.desc {
+  background: white;
+  height: 30vh;
+  line-height: 30vh;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+footer {
+  background: #d6d0d0;
+  height: 15vh;
+  color: white;
+  text-align: center;
+  line-height: 15vh;
+}
+
+.item-card {
+  background: whitesmoke;
+}
+
+.item-card p {
+  text-align: center;
+  padding-top: 40px;
+  color: grey;
+}
+
+.item-card .wrap {
+  margin: 5px 0;
+  padding: 10px 10px;
+}
+
+.item-card .item-image {
+  background: #e5ebe5;
+  width: 100%;
+  margin: 0 auto;
+  height: 30vh;
+  text-align: center;
+  line-height: 30vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.item-card .item-content {
+  background: #dadada;
+  width: 100%;
+  margin: 0 auto;
+  height: 10vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  line-height: 10vh;
+}
+
+@media only screen and (min-width: 1200px) {
+  .description {
+    background: whitesmoke;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .description .description_wrap {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .description .description_wrap .left {
+    width: 49.5%;
+    float: left;
+  }
+  .description .description_wrap .right {
+    width: 49.5%;
+    float: right;
+  }
+  .filter {
+    color: black;
+    font-size: 0.8rem;
+    padding-left: 5px;
+  }
+  .filter .filter_wrap {
+    text-align: center;
+    padding: 5px;
+    margin: 15px 0;
+  }
+  .filter .filter_wrap .filter_item {
+    border: 1px solid #dad5d5;
+    font-size: 0.8rem;
+    padding: 7px 24px;
+    margin: 1px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .filter .filter_wrap .filter_item:hover {
+    cursor: pointer;
+    background: #d1cccc;
+  }
+  .item-card {
+    background: whitesmoke;
+    overflow: hidden;
+  }
+  .item-card p {
+    text-align: center;
+    padding-top: 40px;
+    color: grey;
+  }
+  .item-card .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .item-card .container .wrap {
+    padding: 10px 10px;
+    float: left;
+    width: 33%;
+  }
+  .item-card .container .wrap .item-image {
+    background: #e5ebe5;
+    width: 100%;
+    margin: 0 auto;
+    height: 30vh;
+    text-align: center;
+    line-height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .item-card .container .wrap .item-content {
+    background: #dadada;
+    width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    line-height: 10vh;
+  }
+}
+/*# sourceMappingURL=single.css.map */
